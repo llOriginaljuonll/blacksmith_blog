@@ -10,5 +10,11 @@ class Blog(models.Model):
     update_at = models.DateTimeField(auto_now=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+
+        # verbose_name = "บทความ"
+        verbose_name_plural = "Blog"
+
     def __str__(self):
         return f"No.{self.id} {self.name}"
+    
